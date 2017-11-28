@@ -1,0 +1,10 @@
+.idea
+
+nginx/log/*.log
+!nginx/log/.gitkeep
+
+php/log/*.log
+!php/log/.gitkeep
+
+pg_backup/backup_data/*.sql
+!pg_backup/backup_data/.gitkeep

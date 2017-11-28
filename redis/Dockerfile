@@ -1,0 +1,4 @@
+FROM redis:4
+ENV REDIS_PASSWORD 2TJ4adgfG9pihyRvk3Eh7kYgpgGJhedx
+COPY ./redis.conf /usr/local/etc/redis/redis.conf
+CMD ["sh", "-c", "exec redis-server  \/usr\/local\/etc\/redis\/redis.conf --requirepass \"$REDIS_PASSWORD\""]
